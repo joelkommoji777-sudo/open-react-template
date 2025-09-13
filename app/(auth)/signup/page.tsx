@@ -1,3 +1,5 @@
+"use client";
+
 export const metadata = {
   title: "Sign Up - Open PRO",
   description: "Page description",
@@ -5,8 +7,6 @@ export const metadata = {
 
 import Link from "next/link";
 import SignUpOnboard from "@/components/auth/SignUpOnboard";
-
-"use client";
 
 import Onboarding from "@/components/onboarding/Onboarding";
 
