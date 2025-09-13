@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import ChartMock from "@/components/ChartMock";
 
 export default function DashboardPage() {
   const [profile, setProfile] = useState<{ firstName?: string; lastName?: string } | null>(null);
