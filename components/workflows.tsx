@@ -114,7 +114,7 @@ export default function Workflows() {
                   src={WorflowImg03}
                   width={560}
                   height={360}
-                  alt="Workflow 03"
+                  alt="Gmail integration illustration"
                 />
               </div>
             </a>
