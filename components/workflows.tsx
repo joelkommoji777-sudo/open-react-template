@@ -69,7 +69,7 @@ export default function Workflows() {
                   src={WorflowImg02}
                   width={560}
                   height={360}
-                  alt="Workflow 02"
+                  alt="Professor match illustration"
                 />
               </div>
             </a>
