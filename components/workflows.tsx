@@ -25,7 +25,7 @@ export default function Workflows() {
           </div>
 
           {/* Row 1: text left, box right */}
-          <Spotlight className="group mx-auto grid max-w-3xl items-center gap-8 lg:max-w-none lg:grid-cols-2">
+          <Spotlight className="group mx-auto grid max-w-3xl items-center gap-8 lg:max-w-none lg:grid-cols-2" data-aos="fade-up">
             {/* Text */}
             <div className="lg:order-1">
               <div className="mb-3">
