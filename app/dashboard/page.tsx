@@ -27,9 +27,6 @@ export default function DashboardPage() {
               <h2 className="text-2xl font-semibold font-nacelle text-transparent bg-clip-text bg-[linear-gradient(to_right,var(--color-gray-200),var(--color-indigo-200))]">Welcome Back{name ? `, ${name.split(" ")[0]}` : ""}!</h2>
               <p className="text-sm text-indigo-200/65">Your research outreach dashboard</p>
             </div>
-            <div>
-              <button className="btn bg-linear-to-t from-indigo-600 to-indigo-500 text-white">Create Campaign +</button>
-            </div>
           </div>
 
           <div className="grid gap-6 md:grid-cols-4 mb-6">
@@ -62,30 +59,46 @@ export default function DashboardPage() {
             </div>
           </div>
 
-          <div className="mt-6 grid gap-6 md:grid-cols-2">
+          <div className="mt-6 grid gap-6 md:grid-cols-3">
             <div className="rounded-xl bg-gray-900/40 p-6">
-              <h3 className="mb-3 text-lg font-medium text-indigo-200/75">Campaign Status</h3>
-              <div className="rounded-md border border-gray-800/40 p-4">
-                <div className="flex items-center justify-between">
-                  <div>
-                    <div className="font-semibold">University of Georgia Campaign</div>
-                    <div className="text-sm text-indigo-200/50">1 university · 15 emails sent</div>
-                  </div>
-                  <div className="text-sm text-indigo-200/50">Progress: 20%</div>
+              <h3 className="mb-3 text-lg font-medium text-indigo-200/75">Professor Matching</h3>
+              <div className="space-y-3">
+                <div>
+                  <label className="block text-sm font-medium text-indigo-200/65">University</label>
+                  <input className="form-input w-full" placeholder="e.g. University of Georgia" />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-indigo-200/65">Research area</label>
+                  <input className="form-input w-full" placeholder="e.g. computer vision" />
+                </div>
+                <div className="text-right">
+                  <button className="btn bg-linear-to-t from-indigo-600 to-indigo-500 text-white">Find Professors</button>
                 </div>
               </div>
             </div>
-            <div className="rounded-xl bg-gray-900/40 p-6">
-              <h3 className="mb-3 text-lg font-medium text-indigo-200/75">Recent Activity</h3>
-              <div className="rounded-md border border-gray-800/40 p-6 text-indigo-200/50">No recent activity</div>
-            </div>
-          </div>
 
-          <div className="mt-6 rounded-xl bg-gray-900/40 p-6">
-            <h3 className="mb-3 text-lg font-medium text-indigo-200/75">Quick Actions</h3>
-            <div className="flex items-center gap-3">
-              <button className="btn bg-linear-to-t from-indigo-600 to-indigo-500 text-white">Create New Campaign</button>
-              <button className="btn bg-gray-800 text-gray-300">Upload Resume</button>
+            <div className="rounded-xl bg-gray-900/40 p-6">
+              <h3 className="mb-3 text-lg font-medium text-indigo-200/75">Connect Email</h3>
+              <p className="text-sm text-indigo-200/65 mb-4">Connect your Gmail to send personalized outreach directly from your account.</p>
+              <div className="flex items-center gap-3">
+                <button className="btn bg-linear-to-t from-indigo-600 to-indigo-500 text-white">Connect Gmail</button>
+                <button className="btn bg-gray-800 text-gray-300">Manage</button>
+              </div>
+            </div>
+
+            <div className="rounded-xl bg-gray-900/40 p-6">
+              <h3 className="mb-3 text-lg font-medium text-indigo-200/75">Profile & Resume</h3>
+              <div className="mb-3">
+                <div className="text-sm text-indigo-200/50">Name</div>
+                <div className="font-semibold">{name || "Your name"}</div>
+              </div>
+              <div className="mb-3">
+                <div className="text-sm text-indigo-200/50">Gmail</div>
+                <div className="font-semibold">{typeof window !== 'undefined' && localStorage.getItem('resumeName') ? (localStorage.getItem('resumeName')) : 'Not uploaded'}</div>
+              </div>
+              <div className="rounded-md border border-gray-800/40 p-3">
+                <div className="h-36 w-full rounded-md bg-gray-800/30 flex items-center justify-center text-indigo-200/50">Resume preview (mock)</div>
+              </div>
             </div>
           </div>
         </div>
