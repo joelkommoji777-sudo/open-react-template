@@ -6,27 +6,30 @@ export const metadata = {
 import Link from "next/link";
 import SignUpOnboard from "@/components/auth/SignUpOnboard";
 
+import Onboarding from "@/components/onboarding/Onboarding";
+
 export default function SignUp() {
   return (
     <section>
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="py-12 md:py-20">
-          {/* Section header */}
-          <div className="pb-12 text-center">
-            <h1 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-gray-200),var(--color-indigo-200),var(--color-gray-50),var(--color-indigo-300),var(--color-gray-200))] bg-[length:200%_auto] bg-clip-text font-nacelle text-3xl font-semibold text-transparent md:text-4xl">
-              Create an account
-            </h1>
-          </div>
-          {/* Contact form (client) */}
-          <div>
-            <SignUpOnboard />
-          </div>
-          {/* Bottom link */}
-          <div className="mt-6 text-center text-sm text-indigo-200/65">
-            Already have an account?{" "}
-            <Link className="font-medium text-indigo-500" href="/signin">
-              Sign in
-            </Link>
+          {/* Direct onboarding: skip the initial signup form and go straight to quick setup */}
+          <div className="mx-auto max-w-md">
+            <Onboarding
+              onComplete={(profile, resume) => {
+                try {
+                  localStorage.setItem("profile", JSON.stringify(profile));
+                  if (resume && typeof resume.name === "string") {
+                    localStorage.setItem("resumeName", resume.name);
+                  }
+                } catch (e) {
+                  // ignore
+                }
+                if (typeof window !== "undefined") {
+                  window.location.href = "/dashboard";
+                }
+              }}
+            />
           </div>
         </div>
       </div>
