@@ -6,6 +6,8 @@ export const metadata = {
 import Link from "next/link";
 import SignUpOnboard from "@/components/auth/SignUpOnboard";
 
+"use client";
+
 import Onboarding from "@/components/onboarding/Onboarding";
 
 export default function SignUp() {
