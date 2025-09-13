@@ -50,7 +50,7 @@ export default function Workflows() {
                   src={WorflowImg01}
                   width={560}
                   height={360}
-                  alt="Workflow 01"
+                  alt="Resume preview image"
                 />
               </div>
             </a>
