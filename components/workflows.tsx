@@ -57,7 +57,7 @@ export default function Workflows() {
           </Spotlight>
 
           {/* Row 2: box left, text right */}
-          <Spotlight className="group mx-auto mt-10 grid max-w-3xl items-center gap-8 lg:max-w-none lg:grid-cols-2">
+          <Spotlight className="group mx-auto mt-10 grid max-w-3xl items-center gap-8 lg:max-w-none lg:grid-cols-2" data-aos="fade-up" data-aos-delay="120">
             {/* Glowing box */}
             <a
               className="group/card relative h-full overflow-hidden rounded-2xl bg-gray-800 p-px before:pointer-events-none before:absolute before:-left-40 before:-top-40 before:z-10 before:h-80 before:w-80 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:rounded-full before:bg-indigo-500/80 before:opacity-0 before:blur-3xl before:transition-opacity before:duration-500 after:pointer-events-none after:absolute after:-left-48 after:-top-48 after:z-30 after:h-64 after:w-64 after:translate-x-[var(--mouse-x)] after:translate-y-[var(--mouse-y)] after:rounded-full after:bg-indigo-500 after:opacity-0 after:blur-3xl after:transition-opacity after:duration-500 hover:after:opacity-20 group-hover:before:opacity-100"
@@ -89,7 +89,7 @@ export default function Workflows() {
           </Spotlight>
 
           {/* Row 3: text left, box right */}
-          <Spotlight className="group mx-auto mt-10 grid max-w-3xl items-center gap-8 lg:max-w-none lg:grid-cols-2">
+          <Spotlight className="group mx-auto mt-10 grid max-w-3xl items-center gap-8 lg:max-w-none lg:grid-cols-2" data-aos="fade-up" data-aos-delay="200">
             {/* Text */}
             <div className="lg:order-1">
               <div className="mb-3">
