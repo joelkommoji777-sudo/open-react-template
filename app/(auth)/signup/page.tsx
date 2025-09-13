@@ -4,6 +4,7 @@ export const metadata = {
 };
 
 import Link from "next/link";
+import SignUpOnboard from "@/components/auth/SignUpOnboard";
 
 export default function SignUp() {
   return (
