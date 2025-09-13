@@ -20,9 +20,7 @@ export default function Workflows() {
               Match with the right research mentors
             </h2>
             <p className="text-lg text-indigo-200/65">
-              Simple and elegant interface to start collaborating with your team
-              in minutes. It seamlessly integrates with your code and your
-              favorite programming languages.
+              Upload your resume and research interests — our AI extracts your strengths and finds professors whose work aligns with your goals. Then, send tailored outreach that stands out.
             </p>
           </div>
 
