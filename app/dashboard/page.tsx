@@ -53,7 +53,7 @@ export default function DashboardPage() {
           <div className="grid gap-6 lg:grid-cols-3">
             <div className="lg:col-span-2 rounded-xl bg-gray-900/40 p-6">
               <h3 className="mb-4 text-lg font-medium text-indigo-200/75">Activity Chart</h3>
-              <div className="h-44 rounded-md bg-gradient-to-r from-indigo-900 to-transparent"></div>
+              <div className="h-44 rounded-md"><ChartMock data={[12,9,8,6,5,7,10]} /></div>
             </div>
             <div className="rounded-xl bg-gray-900/40 p-6">
               <h3 className="mb-4 text-lg font-medium text-indigo-200/75">Email Status Distribution</h3>
