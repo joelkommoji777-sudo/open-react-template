@@ -36,8 +36,7 @@ export default function Workflows() {
                 </span>
               </div>
               <p className="text-indigo-200/65">
-                Streamline the product development flow with a content platform
-                that's aligned across specs and insights.
+                Upload your resume and our AI extracts publications, projects, and skills to create a research-focused profile that highlights your strengths.
               </p>
             </div>
             {/* Glowing box */}
@@ -79,13 +78,12 @@ export default function Workflows() {
               <div className="mb-3">
                 <span className="btn-sm relative rounded-full bg-gray-800/40 px-2.5 py-0.5 text-xs font-normal before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_bottom,--theme(--color-gray-700/.15),--theme(--color-gray-700/.5))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] hover:bg-gray-800/60">
                   <span className="bg-linear-to-r from-indigo-500 to-indigo-200 bg-clip-text text-transparent">
-                    Scale Instantly
+                    Professor Matcher
                   </span>
                 </span>
               </div>
               <p className="text-indigo-200/65">
-                Streamline the product development flow with a content platform
-                that's aligned across specs and insights.
+                Our AI scans publications, faculty pages and lab profiles to recommend professors who fit your interests and drafts personalized outreach that speaks to their work.
               </p>
             </div>
           </Spotlight>
@@ -97,13 +95,12 @@ export default function Workflows() {
               <div className="mb-3">
                 <span className="btn-sm relative rounded-full bg-gray-800/40 px-2.5 py-0.5 text-xs font-normal before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_bottom,--theme(--color-gray-700/.15),--theme(--color-gray-700/.5))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] hover:bg-gray-800/60">
                   <span className="bg-linear-to-r from-indigo-500 to-indigo-200 bg-clip-text text-transparent">
-                    Tailored Flows
+                    Gmail Integration
                   </span>
                 </span>
               </div>
               <p className="text-indigo-200/65">
-                Streamline the product development flow with a content platform
-                that's aligned across specs and insights.
+                Connect your Gmail to send personalized outreach directly from your account — scheduled, tracked, and delivered securely.
               </p>
             </div>
             {/* Glowing box */}
