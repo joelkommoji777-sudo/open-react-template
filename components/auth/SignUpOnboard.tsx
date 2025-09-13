@@ -7,6 +7,7 @@ import Onboarding from "@/components/onboarding/Onboarding";
 export default function SignUpOnboard() {
   const [showOnboarding, setShowOnboarding] = useState(false);
   const [profileData, setProfileData] = useState<any>(null);
+  const router = require("next/navigation").useRouter ? require("next/navigation").useRouter() : null;
 
   const handleRegister = (e: React.FormEvent) => {
     e.preventDefault();
@@ -55,10 +56,20 @@ export default function SignUpOnboard() {
           <Onboarding
             initialProfile={profileData}
             onComplete={(profile, resume) => {
-              // for now, just show a simple success and keep mock dashboard reachable
+              // save profile locally for dashboard demo
+              try {
+                localStorage.setItem("profile", JSON.stringify(profile));
+                if (resume && typeof resume.name === "string") {
+                  localStorage.setItem("resumeName", resume.name);
+                }
+              } catch (e) {
+                // ignore
+              }
               console.log("onboarding complete", profile, resume);
-              // navigate to a mock dashboard state by replacing content
-              // we simply show a minimal dashboard replacement below
+              // navigate to dashboard
+              if (typeof window !== "undefined") {
+                window.location.href = "/dashboard";
+              }
             }}
           />
         </div>
